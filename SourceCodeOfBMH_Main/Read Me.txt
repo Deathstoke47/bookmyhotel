@@ -1,0 +1,25 @@
+//Since, we had some issues deploying our website to a server, 
+//To send email to a gmail account, changes has been made in the php.ini and sendmail.ini files in local host;
+
+
+1. Changes made in C:\xampp\php\php.ini
+ [mail function]
+- SMTP=smtp.gmail.com
+
+- smtp_port=587
+
+- sendmail_from = "Enter email address from which you want to send email"
+
+- sendmail_path = "C:\xampp\sendmail\sendmail.exe -t"
+
+2. Changes made in C:\xampp\sendmail\sendmail.ini
+[sendmail]
+
+- smtp_server=smtp.gmail.com
+
+- smtp_port=587
+
+- smtp_ssl=auto
+
+- auth_username= d28018091@gmail.com
+-auth_password=testEmail69420
